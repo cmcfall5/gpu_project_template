@@ -25,3 +25,11 @@ success=$(sed -i $sed_str $proj_dir/Makefile)
 
 success=$(sed -i $sed_str $proj_dir/run.sh)
 # TODO check success
+
+success=$(sed -i $sed_str $proj_dir/README.md)
+# TODO check success
+
+success=$(cd $proj_dir)
+success=$(git init)
+success=$(git add .)
+success=$(git commit -m "initial commit")
